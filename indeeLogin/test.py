@@ -2,7 +2,7 @@
 """
 Created on Mon May 15 21:55:19 2017
 
-@author: ros
+@author: rohit
 """
 
 #from django.test import LiveServerTestCase
@@ -61,7 +61,7 @@ class LoginTestCase(LiveServerTestCase):
         #Assert Email ID text field
         self.assertIn('Email', emailElement)
 
-    """
+    
     #TC_003 :: Validates Email for invalid format. i.e., "[^@]+@[^@]+\.[^@]+" is not followed.
     def test_003(self):
 
@@ -1218,6 +1218,6 @@ class LoginTestCase(LiveServerTestCase):
 
         self.assertTrue(selenium.find_element_by_id('olark-container'))   
     
-    """
+    
 
 
