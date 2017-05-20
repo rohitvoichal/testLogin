@@ -21,12 +21,12 @@ import random
 
 
 
-class AccountTestCase(LiveServerTestCase):
+class LoginTestCase(LiveServerTestCase):
 
     def setUp(self):
 
         self.selenium = webdriver.Chrome('C:\Python34\chromedriver.exe')
-        super(AccountTestCase, self).setUp()
+        super(LoginTestCase, self).setUp()
         self.urlSignUp = 'https://indee.tv/signup'
         self.urlSignIn = 'https://indee.tv/login'
 
@@ -35,7 +35,7 @@ class AccountTestCase(LiveServerTestCase):
 
     def tearDown(self):
         self.selenium.quit()
-        super(AccountTestCase, self).tearDown()
+        super(LoginTestCase, self).tearDown()
 
     """
     #TC_001 :: Assert HTML Page title.
